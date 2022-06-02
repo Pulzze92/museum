@@ -1,0 +1,433 @@
+.visiting {
+    background-color: #FFFFFF;
+}
+
+.visiting {
+    margin: auto;
+    max-width: 1480px;
+    .wrapper {
+        min-width: 1480px;
+        
+        h2 {
+            padding-top: 0.9rem; 
+            padding-left: 2.8rem;
+        }
+        h3 {
+            font-family: 'Forum';
+            font-size: 32px;
+            line-height: 35px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+}
+
+.title-line {
+    position: relative;
+    bottom: 5.4rem;
+    left: 2.7rem;
+}
+
+.layout-6-card {
+    margin-left: 4rem;
+    margin-top: 1.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 6rem;
+    margin-right: 1rem;
+    margin-bottom: 5.5rem;
+}
+
+.card1 {
+    .card__icon {
+      margin-left: -1.2rem;  
+    }
+    h3 {
+        margin-top: 2rem;
+        margin-left: -1.2rem;
+        margin-bottom: -0.1rem;
+        a {
+            color: black;
+        }
+    }
+    a:hover {
+        color: $font-titles;
+    }
+    a:visited {
+        color:black;
+    }
+    .card__line {
+        margin-left: -1.2rem;
+    }
+    .card__description-first {
+        margin-left: -1.3rem;
+    }
+    .card__description-second {
+        margin-left: -1.3rem;
+    }
+}
+
+.card__description-first {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 0.6rem;
+    margin-left: -0.1rem;
+}
+
+.card__description-second {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: -1.1rem;
+    margin-left: -0.2rem;
+}
+
+.card2 {
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: -0.1rem;
+    }
+    .card__line {
+        margin-right: -1.5rem;
+    }
+    a {
+        color: black;
+    }
+    a:hover {
+        color: $font-titles;
+    }
+    a:visited {
+        color:black;
+    }
+}
+
+.card3 {
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: -0.2rem;
+    }
+    a {
+        color: black;
+    }
+    a:hover {
+        color: $font-titles;
+    }
+    a:visited {
+        color:black;
+    }
+}
+
+.card4 {
+    .card__icon {
+      margin-top: -0.4rem;
+    }
+    h3 {
+        margin-top: 2rem;
+        margin-left: -1.2rem;
+        margin-bottom: -0.1rem;
+    }
+    .card__line {
+        margin-left: -1.2rem;
+    }
+    .card__description-first {
+        margin-left: -1.3rem;
+    }
+    .card__description-second {
+        margin-left: -1.3rem;
+    }
+    a {
+        color: black;
+    }
+    a:hover {
+        color: $font-titles;
+    }
+    a:visited {
+        color:black;
+    }
+}
+
+.card5 {
+    .card__icon {
+      margin-top: -0.4rem;
+    }
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: -0.1rem;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $font-titles;
+    }
+}
+
+.card6 {
+    .card__icon {
+      margin-top: -0.4rem;
+    }
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: -0.1rem;
+    }
+    a {
+        color: black;
+    }
+    a:hover {
+        color: $font-titles;
+    }
+    a:visited {
+        color:black;
+    }
+}
+
+@media (max-width: 1024px) {
+    .visiting .wrapper{
+        max-width: 1024px;
+        h2 {
+            font-size: 50px;
+            line-height: 75px;
+            letter-spacing: 5px;
+            margin-top: 50px;
+            margin-left: -10px;
+            margin-bottom: 64px;
+        }
+        .title-line__visiting {
+            width: 984px;
+            margin-left: -7px;
+        }
+        .layout-6-card {
+            max-width: 984px;
+            margin-left: 14rem;
+            gap: 10.8rem;
+            margin-top: 0.3rem;
+            div {
+                max-width: 330px;
+                max-height: 345px;
+            }
+            img {
+                max-width: 100%;
+            }
+            h3 {
+                font-size: 28px;
+                line-height: 31px;
+                letter-spacing: 3px;
+            }
+            .card__line {
+                width: 150px;
+            }
+            .card__description-first {
+                font-weight: 200;
+                font-size: 20px;
+                line-height: 23px;
+            }
+            .card__description-second {
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .card3 {
+                margin-top: -4.9rem;
+                margin-left: -1.2rem;
+            }
+            .card4 {
+                margin-top: -4.5rem;
+                margin-left: 1.2rem;
+                .card__icon img {
+                    width: 100%;
+                }
+                .card__line {
+                    width: 150px;
+                }
+            }
+            .card5 {
+                margin-top: -4.7rem;
+                margin-left: -1.1rem;
+            }
+            .card6 {
+                margin-top: -4.7rem;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 768px) {
+    .visiting {
+        margin-bottom: 100px;
+        .wrapper {
+            h2 {
+                font-size: 40px;
+                line-height: 60px;
+                letter-spacing: 5px;
+                margin-top: 30px;
+            }
+            .title-line__visiting {
+                width: 728px;
+            }
+            .layout-6-card {
+                margin-left: 88px;
+                margin-top: -17px;
+                display: flex;
+                width: 728px;
+                .card__icon {
+                    width: 280px;
+                    height: 180px;
+                    margin-bottom: 25px;
+                }
+                h3 {
+                    font-size: 22px;
+                    line-height: 24px;
+                    letter-spacing: 3px;
+                    margin-bottom: -3px;
+                }
+                .card__description-first {
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-bottom: 20px;
+                }
+                .card__description-second {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-bottom: -18px;
+                }
+                .card3 {
+                   .card__description-first {
+                       padding-bottom: 2px;
+                   }
+                }
+                .card2 {
+                    margin-left: -51px;
+                }
+                .card4 {
+                    margin-left: -40px;
+                }
+                .card6 {
+                    margin-left: -53px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .visiting {
+        margin-bottom: 1px;
+        .wrapper {
+            h2 {
+                font-size: 28px;
+                line-height: 40px;
+                letter-spacing: 5px;
+                margin-top: 34px;
+                margin-left: -8px;
+                margin-bottom: 60px;
+            }
+            .title-line__visiting {
+                width: 380px;
+            }
+            .layout-6-card {
+                display: flex;
+                flex-direction: column;
+                .card__icon {
+                    margin-left: -18px;
+                }
+                h3 {
+                    font-size: 18px;
+                    line-height: 20px;
+                    letter-spacing: 5px;
+                    margin-left: -18px;
+                }
+                .card__line {
+                    width: 150px;
+                    margin-left: -18px;
+                }
+                .card__description-first {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-left: -19px;
+                }
+                .card__description-second {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-left: -20px;
+                }
+                .card2 {
+                    margin-left: 1px;
+                }
+                .card1 {
+                    margin-bottom: -48px;
+                }
+                .card3 {
+                    margin-left: 1px;
+                    margin-bottom: -2px;
+                }
+                .card4 {
+                    margin-left: 17px;
+                    h3 {
+                        margin-left: -35px;
+                    }
+                    .card__icon {
+                        margin-left: 1px;
+                    }
+                    .card__line {
+                        width: 150px;
+                        margin-left: -35px;
+                    }
+                    .card__description-first {
+                        margin-left: -35px;
+                    }
+                    .card__description-second {
+                        margin-left: -36px;
+                        margin-top: -8px;
+                    }
+                }
+                .card5 {
+                    margin-left: 17px;
+                    h3 {
+                        margin-left: -35px;
+                    }
+                    .card__icon {
+                        margin-left: -35px;
+                    }
+                    .card__line {
+                        margin-left: -35px;
+                    }
+                    .card__description-first {
+                        margin-left: -35px;
+                    }
+                    .card__description-second {
+                        margin-left: -36px;
+                        margin-top: -8px;
+                    }
+                }
+                .card6 {
+                    margin-left: 17px;
+                    h3 {
+                        margin-left: -35px;
+                    }
+                    .card__icon {
+                        margin-left: -35px;
+                    }
+                    .card__line {
+                        margin-left: -35px;
+                    }
+                    .card__description-first {
+                        margin-left: -35px;
+                    }
+                    .card__description-second {
+                        margin-left: -36px;
+                        margin-top: -8px;
+                    }
+                }
+            }
+        }
+    }
+}

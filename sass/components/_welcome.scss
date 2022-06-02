@@ -1,0 +1,415 @@
+.welcome {
+    background-color: $color-bg;
+    min-width: 1920px;
+    min-height: 820px;
+}
+
+.welcome__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 144rem;
+    margin: auto;
+}
+
+.welcome__left h2{
+    width: 5.93rem;
+    font-size: 8rem;
+    line-height: 9rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    margin-top: 12.5rem;
+    margin-left: -0.2rem;
+    color: #FFFFFF;
+}
+
+.welcome__left {
+    padding-bottom: 24rem;
+    
+}
+
+.art__slides img{
+    position: relative;
+    z-index: 0;
+    right: 1.2rem;
+    top: 0.75rem;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url(1.jpg);
+}
+
+.welcome__left p {
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 3;
+    left: -.2rem;
+    bottom: 4.1rem;
+    width: 45rem;
+}
+
+.button__red {
+    width: 36rem;
+    height: 7.5rem;
+    background: #710707;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 2;
+    top: .3rem;
+    left:   .2rem;
+    border: none;
+    span a {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+}
+    span a:visited {
+        color: #FFFFFF;
+    }
+}
+
+.button__red:hover {
+    background-color: $font-titles;
+    cursor: pointer;
+}
+
+.slider__overview {
+   display: flex;
+   position: relative;
+   width: 60rem;
+   z-index: 2;
+   bottom: 5.2rem;
+   left: 39rem;
+   justify-content: space-around;
+   height: 12rem;
+   background: #030303;
+   
+}
+
+    
+.quantity__indicator {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    position: relative;
+    left: 0.3rem;
+    top: 5.2rem;
+}
+
+.quantity__count {
+    font-family: 'Roboto';
+    font-size: 2.2rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    left: 2.9rem;
+    top: 4.1rem;
+}
+
+.quantity__dividing {
+    position: relative;
+    left: 0.4rem;
+}
+
+.quantity__from {
+    position: relative;
+    left: 0.9rem;
+}
+
+.quantity__arrows {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+    right: 2.9rem;
+    top: 4.9rem;
+}
+
+.welcome__right {
+    margin-bottom: -5.6rem;
+}
+
+@media (max-width: 1024px) {
+    .welcome {
+        max-width: 1024px;
+        max-height: 573px;
+        .welcome__left {
+            margin-top: -30px;
+            height: 500px;
+            position: relative;
+            z-index: 1;
+        }
+        h2 {
+            font-size: 50px;
+            line-height: 90px;
+            letter-spacing: 5px;
+            margin-left: -228px;
+            margin-bottom: 65px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 2px;
+            margin-left: -228px;
+            padding-top: 0px;
+        }
+        .button__red {
+            width: 300px;
+            height: 60px;
+            margin-left: -228px;
+            margin-top: -20px;
+            span a {
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 2px;
+        }
+        }
+        .art__slides img{
+            position: relative;
+            z-index: 0;
+            right: 37.5rem;
+            top: -7rem;
+            width: 70%;
+        }
+        .slider__overview {
+            position: relative;
+            z-index: 2;
+            left: 6rem;
+            margin-left: -28.2rem;
+            bottom: 13.5rem;
+            width: 55%;
+            .quantity__dividing {
+                margin-left: 4px;
+            }
+            .quantity__current {
+                margin-left: 2px;
+            }
+        }
+        .quantity__count {
+            font-size: 20px;
+            line-height: 40px;   
+            margin-right: 6px;
+        }
+        .quantity__indicator {
+        .indicator img{
+            width: 12px;
+            height: 12px;
+        }
+        }
+        .arrow__left img {
+            width: 30px;
+            margin-right: 3px;
+        }
+        .arrow__right img {
+            width: 30px;
+            margin-right: 9px;
+        }
+    }
+}
+
+
+.quantity__count {
+    font-size: 20px;
+    line-height: 40px;   
+}
+
+@media(max-width: 768px) {
+    .welcome {
+        max-width: 768px;
+        overflow-y:hidden;
+        overflow-x: hidden;
+        padding-bottom: 291px;
+        background-image: url('/pulzze92-JSFE2021Q3/museum/img/adaptive/welcome_768.png');
+        background-repeat: no-repeat;
+        background-position: 20px 218px;
+        .wrapper {
+            
+        }
+        h2 {
+            font-size: 40px;
+            letter-spacing: 5px;
+            line-height: 60px;
+            margin-left: 33px;
+            margin-top: 5px;
+            width: 328px;
+            display: block;
+            padding-right: 70px;
+            padding-left: -20px;
+            margin-bottom: 67px;
+            span {
+                display: inline-block;
+                margin-left: -62px;
+            }
+        }
+        p {
+            margin-left: -30px;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 2px;
+            
+        }
+        .art__slides {
+            display: none;
+        }
+        .button__red {
+            display: none;
+        }
+        .slider__overview {
+            position: absolute;            
+            top: 860px;
+            left: 428px;
+            height: 40px;
+            background: none;
+            .quantity__count {
+                margin-right: 68px;
+                span {
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+            }
+            .quantity__indicator {
+                
+                span img {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+           .quantity__arrows {
+               position: relative;
+               left: 35px;
+           }  
+        }
+    }
+    
+}
+
+@media(max-width: 420px) {
+    .welcome {
+        background-image: url('/pulzze92-JSFE2021Q3/museum/img/adaptive/420mona_lisa.jpg'); 
+        background-position: 19px 162px;
+        .wrapper {
+            min-height: 544px;
+            margin-bottom: -475px;
+            h2 {
+                font-size: 28px;
+                line-height: 40px;
+                margin-left: -118px;
+                margin-top: -6px;
+                position: relative;
+                z-index: 3;
+                span {
+                margin-top: 1px;
+                font-size: 28px;
+                line-height: 40px;
+                margin-left: -42px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2px;
+                margin-left: -177px;
+                margin-top: -4px;
+            }
+                .art__slides {
+                    content: url('/pulzze92-JSFE2021Q3/museum/img/adaptive/420mona_lisa.jpg');
+                    position: relative;
+                    top: 100px;
+                    }
+                    .slider__overview {
+                        position: absolute;
+                        left: 220px;
+                        top: 530px;
+                        z-index: 6;
+                        width: 420px;
+                        max-height: 40px;
+                        .quantity__count {
+                            margin-left: 105px;
+                            
+                            .quantity__current {
+                                margin-right: -8px;
+                            }
+                            .quantity__dividing {
+                                margin-right: -5px;
+                            }
+                            .quantity__from {
+                            
+                            }
+                            span {
+                                font-size: 16px;
+                                line-height: 40px;
+                            }
+                        }
+                        .quantity__indicator {
+                            margin-right: -32px;
+                            margin-top: 3px;
+                            margin-left: -50px;
+                            
+                            span {
+                                margin-right: -15px;
+                                img {
+                                    
+                                    width: 7px;
+                                    height: 7px;
+                                }
+                                
+                            }
+                        }
+                        .quantity__arrows {
+                            margin-right: 34px;
+                            margin-top: 3px;
+                            .arrow__left {
+                                margin-right: -9px;
+                                img {
+                                    width: 20px;
+                                }
+                            }
+                            .arrow__right {
+                                img {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+.welcome {
+    .welcome__wrapper {
+        .welcome__right {
+            .slider__overview {
+                .quantity__indicator {
+                    span {
+                        img:hover {
+                            filter: invert(50%) sepia(8) saturate(9) hue-rotate(10deg);
+	                    transform: scale(1.2);
+                        cursor: pointer;
+                        }
+                    }
+                }
+                .quantity__arrows {
+                    span {
+                        img:hover {
+                            filter: invert(50%) sepia(8) saturate(9) hue-rotate(10deg);
+                            transform: scale(1.2);
+                            cursor: pointer;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+

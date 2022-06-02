@@ -1,0 +1,228 @@
+.contacts {
+    h2 {
+        font-family: 'Forum';
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #9D8665;
+        padding-top: 0.8rem;
+        padding-left: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .contacts__title {
+        img {
+            margin-left: 0.8rem;
+        }
+    }
+    .contacts__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+    }
+    .adress {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        h4 {
+            margin-top: 7.2rem;
+            margin-left: 0.9rem;
+            margin-bottom: 5rem;
+        }
+        p {
+            padding-top: 0.3rem;
+        }
+        address {
+            margin-left: 0.8rem;
+            font-style: normal;
+            a {
+                color: #000000;
+                text-decoration: none;
+                font-style: normal;
+            }
+            a:hover {
+                color: $font-titles;
+            }
+        }
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 26px;
+            color: #000000;
+            margin-left: 0.8rem;
+                a:active {
+                    color: #000000;
+                    text-decoration: none;
+                }
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: $font-titles;
+                }
+        }
+    }
+}
+
+#map {
+    margin-top: 7.1rem;
+    margin-right: -1rem;
+    width: 960px;
+    height: 620px;
+}
+
+@media(max-width: 1024px) {
+    .contacts {
+        max-width: 1024px;
+        height: 722px;
+        .wrapper {
+            max-width: 1024px;
+            
+            .contacts__title {
+               h2 {
+                    font-size: 50px;
+                    line-height: 75px;
+                    letter-spacing: 5px;
+                    margin-top: 52px;
+                    margin-left: 10px;
+                    margin-bottom: 9px;
+                }
+                img {
+                    width: 984px;
+                    margin-left: 19px;
+                }
+        }
+        .contacts__content {
+            margin-bottom: 83px;
+            .adress {
+                margin-left: 11px;
+                h4 {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-top: 56px;
+                    margin-bottom: 35px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+                p:last-child {
+                    margin-top: -5px;
+                }
+                address {
+                    font-size: 20px;
+                    line-height: 23px;
+                    margin-bottom: -8px;
+                }
+            }
+            .map {
+                
+                img {
+                max-height: 454px;
+                max-width: 694px;
+                margin-right: 30px;
+                margin-top: -15px;
+            }
+            }
+        }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .contacts {
+        margin-bottom: 230px;
+        .wrapper {
+            
+            .contacts__title {
+                h2 {
+                    font-size: 40px;
+                    line-height: 60px;
+                    letter-spacing: 5px;
+                    margin-top: 31px;
+                    margin-left: 12px;
+                }
+                img {
+                    width: 728px;
+                }
+            }
+            .contacts__content {
+                
+                display: flex;
+                flex-direction: column;
+                .adress {
+                    margin-bottom: -26px;
+                    h4 {
+                        font-size: 20px;
+                        line-height: 23px;
+                        margin-top: 35px;
+                    }
+                    p {
+                        margin-top: 23px;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                    address {
+                        padding-top: 5px;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+                .map {
+                    margin-left: 19px;
+                    img {
+                        
+                        
+                    }
+                }
+            }            
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .contacts {
+        margin-bottom: -118px;
+        .wrapper {
+            .contacts__title {
+                h2 {
+                    font-size: 28px;
+                line-height: 40px;
+                letter-spacing: 5px;
+                }
+                img {
+                    width: 380px;
+                }
+            }
+                .contacts__content {
+                    .adress {
+                        h4 {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                        address {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                    }
+                    .map {
+                        img {
+                            width: 380px;
+                            margin-top: -21px;
+                        }
+                    }
+                }
+            }
+        }
+}

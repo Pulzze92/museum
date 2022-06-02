@@ -1,0 +1,270 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  padding: 60px 15px;
+  max-height: 100%;
+  overflow: hidden;
+  width: 1440px;
+  max-height: 845px;
+  margin: auto;
+  margin-bottom: 145px;
+}
+
+.popup__wrap {
+  width: 100%;
+  max-width: 144rem;
+  padding: 50px;
+  background: #f9f9f9;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 5px 15px black;
+}
+
+.close {
+  background: #ff0000;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  cursor: pointer;
+  transition: .3s;
+  outline: none;
+}
+
+.close:hover {
+  transition: .3s;
+  transform: rotate(180deg);
+}
+
+.popup {
+    
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 60px 15px;
+  }
+
+  .popup__active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+  }
+
+  .buy__ticket:hover {
+      cursor: pointer;
+      background-color: $font-titles;
+  }
+
+  .overlay {
+    width: 970px;
+    height: 663px;
+    margin: auto;
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      .overlay__logo {
+          margin-bottom: -12rem;
+      }
+      h6 {
+        font-family: 'Forum';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 55px;
+        text-transform: uppercase;
+        color: #9D8665;
+        margin-bottom: -1rem;
+      }
+      .overlay__under__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #710707;
+      }
+      .line__before__form {
+          margin-bottom: 5rem;
+      }
+  }
+
+  .date-time {
+    display: flex;
+    flex-direction: row;
+    max-width: 40rem;
+    gap: 11.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .client__data {
+      display: flex;
+      flex-direction: column;
+      max-width: 40rem;
+      gap: 2rem;
+      margin-bottom: 2rem;;
+  }
+
+  .result__field__ti {
+      border: 1px solid black;
+      max-width: 40rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 13.5rem;
+    h6 {
+        font-family: 'Forum';
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #9D8665;
+        margin-top: -0.2rem;
+        margin-bottom: 0.8rem;
+    }
+    .line__mini {
+        margin-bottom: 2.8rem;
+    }
+    .basic__quant {
+        font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: #030303;
+    }
+    .senior__quant {
+        font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: #030303;
+    }
+  }
+
+  .card__front {
+      position: relative;
+      z-index: 1;
+      bottom: 15rem;
+      left: 20rem;
+  }
+
+  .card__back {
+      position: relative;
+      z-index: 0;
+      right: 5rem;
+      bottom: 10rem;
+  }
+
+  .right__side__overlay {
+      padding-left: 3rem;
+      margin-top: 3.7rem;
+      border: 1px solid black;
+      .louvre-pic {
+          position: relative;
+          bottom: 7rem;
+          left: 25rem;
+      }
+      h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        /* identical to box height */
+        
+        
+        color: #272727;
+      }
+  }
+
+  .book {
+    background: #710707;
+    opacity: 0.9;
+    width: 220px;
+    height: 45px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+color: #FFFFFF;
+margin-left: 40rem;
+margin-bottom: 10rem;
+  }
+
+  .book:active {
+    background-color: $font-titles;
+    color: #fff;
+    border: 1px black solid;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    overflow: hidden;
+    position: relative;
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+  }
+
+  .book:focus {
+    outline: none;
+  }
+
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
+
+
+.popup__active {
+  .overlay {
+    .left__side__overlay {
+      margin-top: -45px;
+      img {
+        margin-left: 6px;
+        margin-top: -19px;
+      }
+      h6 {
+        width: 386px;
+      }
+    }
+  }
+}

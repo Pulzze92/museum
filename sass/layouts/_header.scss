@@ -1,0 +1,153 @@
+.header {
+    min-width: 1920px;
+    background: $color-bg;
+    padding: 32px 0px 58px 0;
+    height: 100%;
+    padding-bottom: 95px;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation {
+    width: 82rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    font-weight: 200;
+    line-height: 2.6rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.navigation__link {
+    list-style: none;
+    a {
+        font-family: 'Roboto';
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+    }
+}
+
+.navigation__link:hover a {
+    color: $font-titles;
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    padding-right: 425px;
+}
+
+.logo img {
+    margin-top: 0.2rem;
+}
+
+.logo h1 {
+    margin-left: 0.43rem;
+    margin-top: 2.85rem;
+}
+
+.logo img:hover {
+    @extend %transition;
+    fill: $brand-color;
+}
+
+.logo a, .logo h1{
+    @extend %transition;
+}
+
+.logo:hover {
+    color: red;
+}
+
+
+@media (max-width: 1024px) {
+    
+    .header__wrapper  {
+        margin: auto;
+        max-width: 1024px;
+        margin: auto;
+        a {
+        margin-left: -426px;
+        margin-top: -10px;
+    }
+    nav {
+        display: none;
+    }
+    
+}
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 110px;
+        padding-bottom: 60px;
+    }
+    .header__wrapper  {
+        margin-bottom: 0px;
+        max-width: 768px;
+        
+        height: 110px;
+        a {
+        margin-left: -555px;
+        margin-top: -65px;
+        font-size: 28px;
+        line-height: 50px;
+        letter-spacing: 5px;
+    }
+        .hamburger {
+            margin-left: -255px;
+            margin-top: -10px;
+        }
+    nav {
+        display: none;
+    }
+    
+}
+}
+
+@media(max-width: 420px) {
+    .header {
+        margin-left: -180px;
+        .header__wrapper {
+            max-width: 420px;
+            .logo {
+                h1 {
+                    font-size: 16px;
+                    line-height: 18px;
+                    letter-spacing: 5px;
+                    margin-top: -3px;
+                    margin-left: 6px;
+                }
+                img {
+                    width: 29px;
+                    height: 16px;
+                    margin-top: -6px;
+                    margin-left: 4px;
+                }
+            }
+            .hamburger {
+                margin-left: -604px;
+                margin-top: -19px;
+            }
+        }
+    }
+}
+
+.header {
+    .header__wrapper {
+        .logo:hover {
+            filter: invert(50%) sepia(8) saturate(9) hue-rotate(10deg);
+	        transform: scale(1.01);
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.wrapper {
+    max-width: $content-width;
+    margin: auto;
+}
+
+@media(max-width: 1024px) {
+    body {
+        max-width: 1024px;
+        overflow-x: hidden;
+    }
+}

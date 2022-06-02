@@ -1,0 +1,514 @@
+.video {
+    overflow: hidden;
+    margin-bottom: -1.9rem;
+    .wrapper {
+        margin: auto;
+        margin-bottom: 4.6rem;
+        margin-top: 1.2rem;
+    }
+}
+
+.video__header {
+    margin-left: 0.7rem;
+    display: grid;
+    grid-template-areas: "title" "gap-area" "paragraph";
+    grid-template-columns: 62rem 10.1rem 72rem;
+    align-content: center;
+    h2 {
+        grid-area: "title";
+        padding-top: -2rem;
+    }
+    p {
+        padding-top: 5.4rem;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38px;
+        color: #000000;
+        grid-area: "paragraph";
+    }
+    .hidden__block {
+        grid-area: "gap-area";
+    }
+}
+
+.main__video {
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    .video_play {
+        position: relative;
+        z-index: 2;
+        bottom: 43.8rem;
+        left: 61rem;
+    }
+    .video__panel {
+        position: relative;
+        bottom: 22.8rem;
+    }
+    .panel__play {
+        position: relative;
+        bottom: 29.3rem;
+        left: 3rem;
+        z-index: 2;
+    }
+    .panel__scroll {
+        position: relative;
+        bottom: 30rem;
+        left: 7.8rem;
+    }
+    .panel__volume {
+        position: relative;
+        bottom: 29.3rem;
+        left: 12.2rem;
+    }
+    .panel__volume__scroll {
+        position: relative;
+        bottom: 30rem;
+        left: 17rem;
+    }
+    .panel__fullscreen {
+        position: relative;
+        bottom: 29.2rem;
+        left: 21.5rem;
+    }
+    .block__white {
+        display: none;
+    }
+}
+
+.video__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4.2rem;
+    margin-left: 0.8rem;
+    margin-top: -23.6rem;
+}
+
+.video__preview__play1 {
+    position: relative;
+    z-index: 2;
+    bottom: 15.2rem;
+    left: 20rem;
+}
+
+.video__preview__play2 {
+    position: relative;
+    z-index: 2;
+    bottom: 15.2rem;
+    left: 62.3rem;
+}
+
+.video__preview__play3 {
+    position: relative;
+    z-index: 2;
+    bottom: 15.2rem;
+    left: 104.4rem;
+}
+
+
+
+@media(max-width: 1024px) {
+    .video {
+        max-width: 1024px;
+        margin-top: 20px;
+        margin-left: 12px;
+        overflow-y: hidden;
+        margin: 0 auto;
+        .wrapper {
+            height: 908px;
+            margin: 0 auto;
+            .video__header {
+                h2 {
+                    font-size: 50px;
+                    line-height: 75px;
+                    letter-spacing: 5px;
+                    margin-bottom: 19px;
+                }
+                p {
+                    display: none;
+                }
+                
+            }
+            .main__video {
+                width: 984px;
+                height: 504px;
+                margin-left: 10px;
+                img:first-child {
+                width: 984px;
+                height: 467px;
+                margin-top: -23px;
+                margin-left: -4px;
+                margin-bottom: 67px;
+            }
+            .video__panel {
+                width: 984px;
+                height: 60px;
+                
+            }
+            .video_play {
+                bottom: 370px;
+                left: 412px;
+                width: 152px;
+                height: 152px;
+            }
+            .panel__play {
+                width: 23px;
+                height: 30px;
+                bottom: 277px;
+                left: 36px;
+            }
+            .panel__scroll {
+                max-width: 564px;
+                left: 62px;
+                bottom: 288px;
+            }
+            .panel__volume {
+                width: 26px;
+                height: 20px;
+                left: 89px;
+                bottom: 282px;
+            }
+            .panel__volume__scroll {
+                width: 143px;
+                left: 116px;
+                bottom: 286px;
+            }
+            .panel__fullscreen {
+                width: 26px;
+                bottom: 279px;
+                left: 141px;
+            }
+            }
+            .video__slide {
+                max-width: 984px;
+                
+                img {
+                    width: 300px;
+                    margin-top: 3px;
+                }
+            }
+            .video__preview {
+                margin-top: 272px;
+                .video__preview__play1 {
+                    bottom: 108px;
+                    left: 124px;
+                }
+                .video__preview__play2 {
+                    left: 393px;
+                    bottom: 108px;
+                }
+                .video__preview__play3 {
+                    left: 663px;
+                    bottom: 108px;
+                }
+            }
+            .video__slider {
+                margin-left: 40rem;
+                margin-top: -1.2rem;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .video {
+        .wrapper {
+            margin-top: 20px;
+            margin-left: 12px;
+            .video__header {
+                h2 {
+                    font-size: 40px;
+                    line-height: 60px;
+                    letter-spacing: 5px;
+                    margin-top: 18px;
+                    margin-bottom: 1px;
+                }
+                p {
+                    display: none;
+                }
+            }
+            .main__video {
+                margin-top: 20px;
+                margin-left: 9px;
+                img:first-child {
+                width: 728px;
+                height: 329px;
+            }
+            .video_play {
+                left: 322px;
+                bottom: 208px;
+                width: 80px;
+            }
+            .video__panel {
+                bottom: 91px;
+                width: 728px;
+                height: 53px;
+                margin-top: 2px;
+            }
+            .panel__scroll {
+                position: relative;
+                z-index: 2;
+                bottom: 191px;
+                left: 0px;
+                width: 728px;
+            }
+            .panel__play {
+                bottom: 134px;
+            }
+            .panel__volume {
+                width: 27px;
+                bottom: 189px;
+                left: 88px;
+            }
+            .panel__volume__scroll {
+                content: url('/pulzze92-JSFE2021Q3/museum/img/adaptive/768volume.svg');
+                bottom: 193px;
+                left: 118px;
+            }
+            .panel__fullscreen {
+                content: url('/pulzze92-JSFE2021Q3/museum/img/adaptive/768full.svg');
+                bottom: 186px;
+                left: 150px;
+            }
+            }
+            .video__slide {
+                margin-top: -162px;
+                .video__slide:nth-child(3) {
+                    display: none;
+                }
+                .video__slide:nth-child(2) {
+                    width: 354px;
+                    height: 199px; 
+                }
+                img {
+                    width: 354px;
+                    height: 199px;
+                }
+                img:first-child {
+                    margin-right: -21px;
+                }
+            }
+            .video__preview__play3 {
+                display: none;
+            }
+            .video__preview__play1 {
+                bottom: 125px;
+                left: 150px;
+            }
+            .video__preview__play2 {
+                bottom: 125px;
+                left: 454px;
+            }
+        }
+        .video__slider {
+            width: 190px;
+            margin-left: 278px;
+            margin-top: -38px;
+        }
+    }
+    
+}
+
+@media(max-width: 420px) {
+    .video {
+        margin-bottom: -38px;
+        .wrapper {
+            .video__header {
+                h2 {
+                    font-size: 28px;
+                    line-height: 40px;
+                    margin-top: 15px;
+                }
+            }
+            .main__video {
+                background-image: url('/pulzze92-JSFE2021Q3/museum/img/adaptive/420video.jpg');
+                background-repeat: no-repeat;
+                height: 172px;
+                .yb {
+                    display: none;
+                }
+                .video__panel {
+                    width: 380px;
+                    height: 55px;
+                    top: 114px;
+                    z-index: 1;
+                }
+                .video_play {
+                    width: 50px;
+                    height: 50px;
+                    top: 60px;
+                    left: 165px;
+                }
+                .panel__play {
+                    width: 13px;
+                    height: 17px;
+                    top: 96px;
+                    left: -364px;
+                    z-index: 4;
+                }
+                .panel__scroll {
+                    width: 380px;
+                    top: 46px;
+                }
+                .panel__volume__scroll {
+                    width: 200px;
+                    top: 50px;
+                    left: 90px;
+                    z-index: 3;
+                }
+                .panel__volume {
+                    width: 18px;
+                    height: 14px;
+                    top: 55px;
+                    left: 63px;
+                    z-index: 3;
+                }
+                .panel__fullscreen {
+                    width: 18px;
+                    height: 18px;
+                    top: 57px;
+                    left: 114px;
+                    z-index: 4;
+                }
+            }
+            .video__slider {
+                margin-top: -19px;
+                margin-left: 110px;
+                .video__slider__quote__left {
+                    width: 7px;
+                    height: 8px;
+                    margin-right: -10px;
+                }
+                .video__slider__active__slide {
+                    width: 7px;
+                    height: 8px;
+                    margin-left: -5px;
+                    margin-right: -10px;
+                }
+                .video__slider__active__slide {
+                    width: 8px;
+                    height: 8px;
+                    margin-right: -10px;
+                }
+                #circle1 {
+                    margin-right: -5px;
+                }
+                #circle2 {
+                    margin-left: -7px;
+                }
+                #circle3 {
+                    margin-left: -10px;
+                }
+                #circle4 {
+                    margin-left: -14px;
+                
+                }
+                #circle5 {
+                    margin-left: -17px;
+                }
+                #square1 {
+                    margin-left: -23px;
+                }
+                .video__slider__inactive__slide {
+                    width: 8px;
+                    height: 8px;
+                    margin-right: -10px;
+                }
+            }
+            .video__preview {
+                margin-top: 255px;
+                .video__preview__play3 {
+                    display: none;
+                }
+                .video__preview__play1 {
+                    bottom: 75px;
+                    left: 63px;
+                }
+                .video__preview__play2 {
+                    z-index: 4;
+                    bottom: 74px;
+                    left: 192px;
+                }
+                .video__slide {
+                    img:nth-child(2) {
+                        margin-right: 19px;
+                    }
+                    .st__video {
+                        margin-left: -20px;
+                    }
+                    img {
+                        width: 180px;
+                        height: 101px;
+                    }
+                    img:last-child {
+                        display: none;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.video-slider {
+    margin-top: 1rem;
+    
+}
+
+.swiper-container {
+    max-width: 1440px;
+    position: relative;
+    left: 250px;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    min-width: 0;
+    flex-direction: row;
+    gap: 28px;
+    max-width: 1440px;
+    margin-bottom: 75px;
+    position: relative;
+    
+
+    .swiper-slide {
+        overflow: hidden;
+        min-width: 452px;
+        iframe {
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.image-slider {
+    
+    position: relative;
+    left: 859px;
+    bottom: 52px;
+    z-index: 99;
+    min-width: 200px;
+    min-height: 12px;
+    display: flex;
+    gap: 20px;
+}
+
+.quote__left:hover {
+    filter: invert(50%) sepia(8) saturate(9) hue-rotate(10deg);
+    cursor: pointer;
+}
+
+.quote__right:hover {
+    filter: invert(50%) sepia(8) saturate(9) hue-rotate(10deg);
+    cursor: pointer;
+}
+
+.video-clider-circle:hover {
+    filter: invert(50%) sepia(8) saturate(9) hue-rotate(10deg);
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,98 @@
+.main__player {
+    overflow: hidden;
+    padding-top: -180px;
+    max-width: 100%;
+    margin-left: 20px;
+    .play__on__video {
+        position: relative;
+        z-index: 10;
+        content: url('/pulzze92-JSFE2021Q3/museum/img/icons/play__btn.svg');
+        top: 500px;
+        left: 620px;
+        width: 220px;
+        height: 220px;
+    }
+    .play__on__video {
+        cursor: pointer;
+    }
+    video {
+        min-width: 1440px;
+        min-height: 650px;
+        margin-bottom: -4px;
+    }
+    video[poster] {
+        max-width: 1000px;
+        min-height: 100%;
+    }
+    .player__controls {
+        background: #000000;
+        min-width: 1440px;
+        min-height: 85px;
+        display:flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        align-content: center;
+        .volume__icon {
+            content: url('/pulzze92-JSFE2021Q3/museum/img/icons/panel_volume.svg');
+        }
+        .volume__icon:hover {
+            cursor: pointer;
+        }
+        .play__container {
+            margin-top: 22px;
+            width: 34px;
+            height: 34px;
+            background: #FFFFFF;
+        }
+        .play__container:hover {
+            cursor: pointer;
+            background: $font-titles;
+        }
+        .player__slider:hover {
+            cursor:pointer;
+        }
+        .full__screen {
+            width: 35px;
+            height: 35px;
+            background: url('/pulzze92-JSFE2021Q3/museum/img/icons/panel_fullscreen.svg') center center no-repeat;
+            border: none;
+            margin-top: 25px;
+        }
+        .full__screen:hover {
+            cursor: pointer;
+            filter: opacity(35%);
+        }
+    }
+    .toggle {
+        width: 34px;
+        height: 34px;
+        background: url('/pulzze92-JSFE2021Q3/museum/img/video/play.svg') no-repeat center;
+        background: #FFFFFF;
+        border: none;
+    }
+    .toggle:hover {
+        cursor:pointer;
+    }
+    .progress {
+        display: flex;
+        height: 8px;
+        width: 929px;
+        background: #FFFFFF;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        top: 37px;
+        .progress__filled {
+            height: 8px;
+            width: 929px;
+            background: rgb(21, 91, 221);
+            border-radius: 0px;
+            flex-basis: 0%;
+        }
+    }
+    .progress:hover {
+        cursor: pointer;
+        filter: invert(20%);
+    }
+}
