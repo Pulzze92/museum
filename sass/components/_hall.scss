@@ -1,15 +1,15 @@
 .photo__hall {
-    height: 400px;
-    background: url('/pulzze92-JSFE2021Q3/museum/img/parallax.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 400px;
+  background: url('./img/parallax.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media(max-width: 768px) {
-    .photo__hall {
-        max-height: 300px;
-        margin-top: -30px;
-    }
+@media (max-width: 768px) {
+  .photo__hall {
+    max-height: 300px;
+    margin-top: -30px;
+  }
 }
