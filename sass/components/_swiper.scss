@@ -5,78 +5,77 @@
 }
 
 .right__block {
-    position: relative;
-    height: 700px;
-    width: 720px;
-    overflow: hidden;
-    .images {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        .explore__dark {
-            height: 100%;
-            width: 100%;
-            background: url('/pulzze92-JSFE2021Q3/museum/img/explore/dark.jpg') no-repeat;
-        }
-        .explore__light {
-            position: absolute;
-            height: 100%;
-            width: 50%;
-            background: url('/pulzze92-JSFE2021Q3/museum/img/explore/light.jpg') no-repeat;
-        }
+  position: relative;
+  height: 700px;
+  width: 720px;
+  overflow: hidden;
+  .images {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .explore__dark {
+      height: 100%;
+      width: 100%;
+      background: url('./img/explore/dark.jpg') no-repeat;
     }
-    .swiper {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-        input {
-            width: 100%;
-            outline: none;
-            background: none;
-            -webkit-appearance: none;
-        }
-        input::-webkit-slider-thumb {
-            height: 486px;
-            width: 3px;
-            background: none;
-            -webkit-appearance: none;
-            cursor: pointer;
-        }
-        .line {
-            width: 3px;
-            height: 700px;
-            position: absolute;
-            left: 49.85%;
-            pointer-events: none;
-            cursor: pointer;
-        }
-        .line:before {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 339px;
-            background: #fff;
-            top: 0;
-        }
-        .line:after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 199px;
-            background: #fff;
-            top: 52%;
-        }
-        .line span {
-            height: 22px;
-            width: 22px;
-            border: 3px solid #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-        }
+    .explore__light {
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      background: url('./img/explore/light.jpg') no-repeat;
     }
+  }
+  .swiper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    input {
+      width: 100%;
+      outline: none;
+      background: none;
+      -webkit-appearance: none;
+    }
+    input::-webkit-slider-thumb {
+      height: 486px;
+      width: 3px;
+      background: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    .line {
+      width: 3px;
+      height: 700px;
+      position: absolute;
+      left: 49.85%;
+      pointer-events: none;
+      cursor: pointer;
+    }
+    .line:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 339px;
+      background: #fff;
+      top: 0;
+    }
+    .line:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 199px;
+      background: #fff;
+      top: 52%;
+    }
+    .line span {
+      height: 22px;
+      width: 22px;
+      border: 3px solid #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
-

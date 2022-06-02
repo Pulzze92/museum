@@ -1936,10 +1936,12 @@ h6 {
 }
 
 .footer .logo {
+  max-width: 50px;
   margin-right: -24.5rem;
 }
 
 .footer .logo a {
+  max-width: 50px;
   display: flex;
   gap: 2rem;
   margin-top: 2.1rem;
@@ -3279,7 +3281,7 @@ h6 {
 }
 .photo__hall {
   height: 400px;
-  background: url('./img/parallax.jpg');
+  background: url('../img/parallax.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -3908,14 +3910,14 @@ h6 {
 .right__block .images .explore__dark {
   height: 100%;
   width: 100%;
-  background: url('./img/explore/dark.jpg') no-repeat;
+  background: url('../img/explore/dark.jpg') no-repeat;
 }
 
 .right__block .images .explore__light {
   position: absolute;
   height: 100%;
   width: 50%;
-  background: url('./img/explore/light.jpg') no-repeat;
+  background: url('../img/explore/light.jpg') no-repeat;
 }
 
 .right__block .swiper {
@@ -4094,6 +4096,8 @@ h6 {
   filter: invert(20%);
 }
 
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.scss.map */
